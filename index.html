@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div id="nav-bar">
+        <div class="container">
+          <div class="nav-content">
+            <div class="logo">
+              <img src="/img/myPortfolioLogo.jpeg" alt="" />
+            </div>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact" class="active">Hire me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section id="about">
+        <div class="container">
+          <p>
+            Hello world,<br />
+            My name is Ibrahim Bakare, i am
+            <mark>Software Engineer</mark> focus on frontend Development base in
+            Lagos, Nigeria. Aspiring to be full-stack. I can do whatever the
+            customer needs, for example, build a frontend view, develop backend
+            APIs.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <h3 class="project-tile">These are my works</h3>
+          <div class="cards">
+            <a class="card" href="">
+              <img src="" alt="" />
+              <figcaption>Ping Coming Soon</figcaption>
+            </a>
+            <a class="card" href="">
+              <img src="" alt="" />
+              <figcaption>Profile card Component</figcaption>
+            </a>
+            <a class="card" href="">
+              <img src="" alt="" />
+              <figcaption>Single Price Grind Component</figcaption>
+            </a>
+            <a class="card" href="">
+              <img src="" alt="" />
+              <figcaption>Stats Preview Card Component</figcaption>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <form>
+          <h3>contact</h3>
+          <input type="text" name="name" placeholder="Full name" required />
+          <input type="email" placeholder="Enter your email" required />
+          <textarea
+            name="massage"
+            cols="30"
+            rows="15"
+            placeholder="Message"
+            required
+          ></textarea>
+          <input type="submit" id="submit" value="Submit" />
+        </form>
+      </section>
+
+      <footer>
+        <div class="social-media">
+          <a href="">Twitter</a>
+          <a href="#">Github</a>
+          <a href="">Linkedn</a>
+        </div>
+      </footer>
+
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>
