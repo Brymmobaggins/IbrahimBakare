@@ -42,7 +42,7 @@ body::-webkit-scrollbar{
 #nav-bar{
   width: 100%;
   position: fixed;
-  border-bottom: 1px solid #7e7d7d;
+  border-bottom: 0.5px solid #e0d9d9;
   left: 0;
   right: 0;
   top: 0;
@@ -55,15 +55,15 @@ body::-webkit-scrollbar{
 }
 .nav-content .logo{
   display: flex;
-  width: 65px;
-  height: 60px;
+  width: 70px;
+  height: 65px;
   margin: 20px auto;
 }
 .nav-content .logo img{
   cursor: pointer;
   width: 100%;
   border-radius: 55px;
-  border: 2px solid #fff;
+  border: 2px solid gray;
 }
 .nav-content ul{
   padding: 0;
@@ -81,6 +81,13 @@ body::-webkit-scrollbar{
 .nav-content ul li:last-child{
   margin-right: 0;
   font-size: 10px;
+}
+.nav-content ul li button{
+  border:0;
+  background-color:azure;
+  cursor: pointer;
+  font-weight: bold;
+  color:#020000;
 }
 .nav-content ul li a{
   text-decoration: none;
