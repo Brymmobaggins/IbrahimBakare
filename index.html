@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ibrahim Bakare | Portfolio</title>
-    <<script src="https://kit.fontawesome.com/c446e7960e.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script src="https://kit.fontawesome.com/c446e7960e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
@@ -18,7 +22,7 @@
       <div id="nav-bar">
         <div class="container">
           <div class="nav-content">
-            <div class="logo">
+            <div class="logo animate__animated animate__bounce">
               <img src="/img/myPortfolioLogo.jpeg" alt="" />
             </div>
             <ul>
@@ -35,39 +39,38 @@
       <!-- About section -->
       <section id="about">
         <div class="container">
-          <p>
-            Hello world, I'm Ibrahim Bakare!<br />
-            I'm a <mark>Software Engineer</mark> base in Lagos, Nigeria. focus
+          <h1 class="animate__bounceInLeft" >
+            Hello world, am <span>Ibrahim Bakare </span><br />
+            I'm a Self-taught <mark>Software Engineer</mark> base in Lagos, Nigeria with proficient background in Information Technology. focus
             on front-end who loves to build user-friendly website and web apps.
             I can do whatever the customer needs, for example, build a frontend
             view, develop backend APIs. I also enjoy writing documentation and
             loves helping people learn how to code.
-          </p>
+          </h1>
         </div>
       </section>
 
       <!-- skills section -->
       <section id="skills">
         <div class="container">
-          <div class="row">
-            <div class="col">
+          <div class="rowSkills">
+            <div class="colSkills">
               <ul>
-                <li> <a href="">HTML</a></li>
-                <li> <a href="">CSS</a> </li>
-                <li> <a href="">JavaScript</a> </li>
-                <li> <a href=""> React</a> </li>
+                <li><a href="">HTML</a></li>
+                <li><a href="">CSS</a> </li>
+                <li><a href="">JavaScript</a> </li>
+                <li><a href=""> React</a></li>
+                <li><a href=""> Python</a></li>
               </ul>
             </div>
-            <div class="col">
+            <div class="colSkills">
               <ul>
                 <li> <a href="">Git and Github</a></li>
                 <li> <a href="">Azure DevOps</a></li>
-                <li> <a href=""></a></li>
-                <li> <a href=""></a></li>
+                <li><a href=""> Wire Frame</a></li>
+                <li><a href=""> WordPress</a></li>
               </ul>
             </div>
-            <div class="col">
-
             </div>
           </div>
 
@@ -124,7 +127,7 @@
               <h2 class="">Talk to me</h2>
               <form action="">
                 <input type="text" id="lastName" placeholder="Email Address" required> 
-                <textarea name="" id="" cols="30" rows="10" placeholder="Write something ...." required></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Messages...." required></textarea>
                 <input type="submit" value="Submit">
               </form>
             </div>
@@ -133,10 +136,10 @@
       </section>
 
       <!-- Footer section -->
-      <footer>
         <footer>
-          <hr />
-          <p>2021 Copyright. All Right Reserved Ibrahim Bakare</p>
+          <div class="container">
+            <div class="footer-content">
+          <p>2021 &copy; Copyright. All Right Reserved Ibrahim Bakare</p></div></div>
         </footer>
 
       <script src="index.js"></script>
