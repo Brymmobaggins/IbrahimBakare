@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ibrahim Bakare | Portfolio</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script src="https://kit.fontawesome.com/c446e7960e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <!-- <link
@@ -15,14 +15,18 @@
       rel="stylesheet"
     /> -->
     <link rel="stylesheet" href="styles.css" />
-    <!-- <link rel="stylesheet" type="styles.css" href="file:///Users/brymmobaggins/Downloads/font-awesome-4.7.0/css/font-awesome.css"> -->
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="file:///Users/brymmobaggins/Desktop/fonts/fontawesome-free-5.15.3-web/css/all.css"
+    /> -->
   </head>
   <body>
     <div class="main">
       <!-- header and navigation Bar -->
       <div id="nav-bar">
         <div class="container">
-          <input type="checkbox" id="check">
+          <input type="checkbox" id="check" />
           <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
           </label>
@@ -35,7 +39,11 @@
               <li><a href="#skills">Skills</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#contact" class="active">Hire me</a></li>
-              <li><button class="lightMode" onclick="myMode()"><i class="fa-solid fa-moon"></i>too Bright?</button></li>
+              <li>
+                <button class="lightMode" onclick="myMode()">
+                  <i class="fa-solid fa-moon"></i>too Bright?
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -44,9 +52,10 @@
       <!-- About section -->
       <section id="about">
         <div class="container">
-          <h1 class="animate__bounceInLeft" >
+          <h1 class="animate__bounceInLeft">
             Hello world, am <span>Ibrahim Bakare</span><br />
-            I'm a Self-taught <mark>Software Engineer</mark> base in Lagos, Nigeria with proficient background in Information Technology. focus
+            I'm a Self-taught <mark>Software Engineer</mark> base in Lagos,
+            Nigeria with proficient background in Information Technology. focus
             on front-end who loves to build user-friendly website and web apps.
             I can do whatever the customer needs, for example, build a frontend
             view, develop backend APIs. I also enjoy writing documentation and
@@ -58,28 +67,17 @@
       <!-- skills section -->
       <section id="skills">
         <div class="container">
-          <div class="rowSkills">
-            <div class="colSkills">
-              <ul>
-                <li><a href="">HTML</a></li>
-                <li><a href="">CSS</a> </li>
-                <li><a href="">JavaScript</a> </li>
-                <li><a href=""> React</a></li>
-                <li><a href=""> Python</a></li>
-              </ul>
-            </div>
-            <div class="colSkills">
-              <ul>
-                <li> <a href="">Git and Github</a></li>
-                <li> <a href="">Azure DevOps</a></li>
-                <li><a href=""> Wire Frame</a></li>
-                <li><a href=""> WordPress</a></li>
-              </ul>
-            </div>
-            </div>
-          </div>
-
+          <span>tools</span>
+          <ul>
+            <li><a href="#">HTML</a> </li>
+            <li><a href="#">CSS</a> </li>
+            <li><a href="#">BOOTSTRAP</a> </li>
+            <li><a href="#">JavaScript</a> </li>
+            <li><a href="#">React</a> </li>
+            <li><a href="#">Git & Github</a> </li>
+          </ul>
         </div>
+      
       </section>
 
       <!-- project section -->
@@ -119,21 +117,51 @@
       <section id="contact">
         <div class="container">
           <div class="row">
-            <div class="col social-media" >
+            <div class="col social-media">
               <ul>
-                <li><a href="https://www.Github.com/Brymmobagggins" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/ibrahim-bakare-13a8ab113/" target="_blank"><i class="fab fa-linkedin" ></i></a></li>
-                <li><a href="https://twitter.com/BrymmoBaggins" target="_blank"><i class="fab fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fas fa-file"></i></a></li>
+                <li>
+                  <a
+                    href="https://www.Github.com/Brymmobagggins"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/ibrahim-bakare-13a8ab113/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/BrymmoBaggins" target="_blank"
+                    ><i class="fab fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-file"></i></a>
+                </li>
               </ul>
             </div>
 
             <div class="col form-group">
               <h2 class="">Talk to me</h2>
               <form action="">
-                <input type="text" id="lastName" placeholder="Email Address" required> 
-                <textarea name="" id="" cols="30" rows="10" placeholder="Messages...." required></textarea>
-                <input type="submit" value="Submit">
+                <input
+                  type="text"
+                  id="lastName"
+                  placeholder="Email Address"
+                  required
+                />
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Messages...."
+                  required
+                ></textarea>
+                <input type="submit" value="Submit" />
               </form>
             </div>
           </div>
@@ -141,11 +169,13 @@
       </section>
 
       <!-- Footer section -->
-        <footer>
-          <div class="container">
-            <div class="footer-content">
-          <p>2021 &copy; Copyright. All Right Reserved Ibrahim Bakare</p></div></div>
-        </footer>
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <p>2021 &copy; Copyright. All Right Reserved Ibrahim Bakare</p>
+          </div>
+        </div>
+      </footer>
 
       <script src="index.js"></script>
     </div>
