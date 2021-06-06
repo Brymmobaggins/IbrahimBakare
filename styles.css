@@ -106,6 +106,11 @@ body::-webkit-scrollbar {
   font-family: "Press Start 2P", Tahoma;
   font-weight: bold;
   margin-right: 15px;
+  cursor: pointer;
+  /* opacity: 0.85; */
+}
+.nav-content ul li:hover {
+  /* opacity: 0.85; */
 }
 .nav-content a.active {
   background-color: var(--myColor);
@@ -135,7 +140,7 @@ body::-webkit-scrollbar {
 
 #about h1 {
   padding: 250px 150px 120px 150px;
-  line-height: 2.10rem;
+  line-height: 2.1rem;
   font-size: 13px;
   font-family: "Press Start 2P", Tahoma;
   animation: bounceInLeft;
