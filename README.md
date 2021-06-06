@@ -11,7 +11,13 @@
 - HTML5
 - Pure CSS
   
+## Continue development
+
+
+
 ## Useful resources
 
-- [fontawesome](https://www.Fontawesome.com) - I wanted to integrate dark/light mode features enable to get the accurate icons for this project.
-- [Googlefonts](https://www.Googlefonts.com) - This resources was very useful and important, i was stuck in the middle and being indecisive how to choose accurate irregular font for my portfolio.
+- [fontawesome](https://www.Fontawesome.com) - I wanted to integrate dark/light mode features enable to get the accurate icons for this project. I had to navigae to fontawesome.com and type "toggle" on search bar, it pops up the attribute of the icon "<i class="fa fa-moon"></i>". It was really helpful and choosy.
+  
+- [Googlefonts](https://www.Googlefonts.com) - This resources was very useful and important, i was stuck in the middle. I have being indecisive lately in choosing fonts and accurate colors. I have finally found "Font-font-family:Press Start 2P" which looks or more or less like Supermario game font, lol. it was lovely though. I love the fact that it looks irregular.
+
