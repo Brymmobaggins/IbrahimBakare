@@ -48,14 +48,14 @@ body::-webkit-scrollbar {
   border-bottom: 0.5px solid #e0d9d9;
   left: 0;
   right: 0;
-  top: 0;
+  top: 0;u
   z-index: 4;
 }
 .checkbtn {
   font-size: 30px;
   float: right;
   margin-right: 40px;
-  line-height: 80px;
+  line-height: 80px;u
   margin-right: 40px;
   cursor: pointer;
   display: none;
