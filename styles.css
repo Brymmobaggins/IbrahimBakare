@@ -291,7 +291,7 @@ body::-webkit-scrollbar {
   padding: 0 50px;
   margin-top: 6px;
 }
-/* Clear floats after the columns */
+/* Clear floats after the columns  */
 .row:after {
   content: "";
   display: table;
@@ -335,7 +335,7 @@ body::-webkit-scrollbar {
 .fa-twitter {
   color: #1da1f2;
 }
-.fa-file {
+.fa-download {
   color: #e2d5d5;
   border: 1px solid #000;
 }
