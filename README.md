@@ -4,7 +4,7 @@
 
 ## links
 
-[live]
+[Live](https://brymmobaggins.github.io/myPortfolio/)
 
 ## Built with
 
