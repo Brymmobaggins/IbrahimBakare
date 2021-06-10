@@ -28,7 +28,6 @@ body {
   font-family: "Press Start 2P", "Tahoma";
   background-color: var(--myBackgroundColor);
   color: var(--main-text-color);
-  /* pointer-events: none; */
 }
 .dark-mode {
   background-color: #0c1011;
@@ -187,7 +186,6 @@ body::-webkit-scrollbar {
 }
 .tools-header p {
   margin-top: 15px;
-  /* font-size: 150px; */
 }
 #skills .container span {
   font-size: 20px;
@@ -413,10 +411,6 @@ footer .footer-content {
 }
 /* Media query */
 @media screen and (max-width: 750px) {
-
-  .main{
-
-  }
   .checkbtn {
     display: block;
     margin: 10px 0;
@@ -499,11 +493,11 @@ footer .footer-content {
     /* width: 100%; */
   }
   .social-media ul li{
-    margin-right: 1.5px;
+    margin-right: 1px;
   }
   .social-media ul li a{
     font-size: 25px;
-    margin-right: 1px;
+    /* margin-right: 1px; */
 
   }
   .social-media ul li:first-child {
@@ -524,6 +518,10 @@ footer .footer-content {
   #skills h3 {
     font-size: 12px;
     line-height: 15px;
+    margin-top: -55px;
+    margin-right: 10px;
+    margin-left: 10px;
+
   }
   #skills p {
     font-size: 8px;
@@ -551,7 +549,7 @@ footer .footer-content {
   #projects .cards .card figcaption {
     font-size: 5px;
   }
-
+}
 @media screen and (min-width: 600px) {
   #projects .cards {
     grid-template-columns: 1fr 1fr 1fr;
