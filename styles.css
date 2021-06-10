@@ -498,9 +498,6 @@ footer .footer-content {
     font-size: 10px;
     margin-top: -100px;
   }
-  #skills {
-    /* padding: 50px; */
-    /* height: 80vh; */
   }
   #skills h3 {
     font-size: 12px;
@@ -531,7 +528,7 @@ footer .footer-content {
   #projects .cards .card figcaption {
     font-size: 5px;
   }
-}
+
 @media screen and (min-width: 600px) {
   #projects .cards {
     grid-template-columns: 1fr 1fr 1fr;

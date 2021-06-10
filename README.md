@@ -10,7 +10,8 @@
 
 - HTML5
 - Pure CSS
-  
+- Vanilla JavaScript
+
 ## Continue development
 
 ## Useful resources
