@@ -126,8 +126,7 @@ body::-webkit-scrollbar {
   font-size: 18px;
   display: block;
 }
-.fa-moon{
-
+.fa-moon {
 }
 /* styling the About section */
 #about {
@@ -244,7 +243,7 @@ body::-webkit-scrollbar {
 #projects .cards {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
 #projects .cards .card {
   display: block;
@@ -266,12 +265,14 @@ body::-webkit-scrollbar {
 #projects .cards .card figcaption {
   position: absolute;
   z-index: 2;
-  font-size: 8px;
+  font: normal 15px "libre franklin";
+  color: #000;
   bottom: 0;
   padding: 10px 0;
   margin: 0 auto;
   width: 100%;
   text-align: center;
+  /* background-color: #ffff transparent; */
 }
 /*  styling the contact section */
 #contact {
