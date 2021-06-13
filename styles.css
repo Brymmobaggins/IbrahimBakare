@@ -264,7 +264,7 @@ body::-webkit-scrollbar {
 #projects .cards .card figcaption {
   position: absolute;
   z-index: 2;
-  font: normal 15px "libre franklin";
+  font: bold 10px "libre franklin";
   color: #000;
   bottom: 0;
   padding: 10px 0;
