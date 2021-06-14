@@ -414,7 +414,7 @@ footer .footer-content {
   font-size: 0.625rem;
 }
 /* Media query */
-@media screen and (max-width: 750px) {
+@media (max-width: 750px) {
   .checkbtn {
     display: block;
     margin: 10px 0;
@@ -550,7 +550,7 @@ footer .footer-content {
     /* line-height: 15px; */
   }
 }
-@media screen and (min-width: 600px) {
+@media all and (min-width: 600px) {
   #projects .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
