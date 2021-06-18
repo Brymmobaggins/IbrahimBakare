@@ -5,9 +5,8 @@
   box-sizing: border-box;
 }
 :root {
-  --main-text-color: #080707;
-  --myColor: #7979eb;
-  --myBackgroundColor: #f0ffff;
+  --myBackgroundColor: rgb(18, 20, 20);
+  --myColor: #fff;
   --Tahoma-font: "tahoma", sans-serif;
   --Press-Start-2P: "Press Start 2P", sans-serif;
   --animate-duration: 800ms;
@@ -25,12 +24,12 @@ html {
 body {
   font-size: 0.95rem;
   font-family: "Press Start 2P";
-  background-color: var(--myBackgroundColor);
-  color: var(--main-text-color);
+  background: var(--myBackgroundColor);
+  color: var(--myColor);
 }
 .dark-mode {
-  background-color: #0c1011;
-  color: #ffff;
+  background-color: #909a9c;
+  color: black;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -64,6 +63,7 @@ body::-webkit-scrollbar {
 .nav-content {
   display: flex;
   width: 100%;
+  /* height: 15vh; */
   align-items: center;
 }
 .nav-content .logo {
@@ -73,7 +73,6 @@ body::-webkit-scrollbar {
   width: 50px;
   height: 40px;
   margin: 20px auto;
-  /* margin-left: 150px; */
 }
 .nav-content .logo img {
   cursor: pointer;
@@ -89,41 +88,41 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: flex-end;
   font-size: 10px;
+  padding-top: 20px;
 }
 .nav-content ul li {
   display: inline-block;
   margin: 20px;
+  margin-top: auto;
 }
 .nav-content ul li:last-child {
   margin-right: 0;
-  font-size: 10px;
 }
 .nav-content ul li a {
   text-decoration: none;
-  color: var(--main-text-color);
+  color: var(--myColor);
   font-family: "Press Start 2P", Tahoma;
   font-weight: bold;
   margin-right: 15px;
   cursor: pointer;
-  /* opacity: 0.85; */
 }
 
 .nav-content a.active {
-  background-color: var(--myColor);
+  background-color: #008000;
   padding: 12px;
   border-radius: 5px;
-  color: #fff;
   transition: border-color 100ms;
 }
 .nav-content a.active:hover {
-  border: 1px solid var(--myColor);
+  border: 1px solid #008000;
   opacity: 0.94;
 }
-.nav-content .lightMode {
-  font-family: "sans-serif";
-  font-weight: bold;
-  font-size: 18px;
-  display: block;
+.nav-content ul li a i {
+  font-style: normal;
+  font-size: inherit;
+  font-weight: 900;
+  font-family: cursive;
+  margin-left: -15px;
 }
 .fa-moon {
 }
@@ -138,14 +137,13 @@ body::-webkit-scrollbar {
 
 #about h1 {
   padding: 250px 150px 120px 150px;
-  line-height: 2.1rem;
+  line-height: 1.5rem;
   font-size: 13px;
-  font-family: "Press Start 2P", Tahoma;
+  font-family: var(--Press-Start-2P);
   animation: bounceInLeft;
   animation-duration: 5s;
 }
 #about span {
-  color: var(--myColor);
   font-family: fantasy;
   font-size: 60px;
   font-weight: 900;
@@ -224,7 +222,6 @@ body::-webkit-scrollbar {
   font-size: 15px;
   text-align: center;
   padding: 5px;
-  color: black;
 }
 
 /* Projects section */
@@ -271,7 +268,6 @@ body::-webkit-scrollbar {
   margin: 0 auto;
   width: 100%;
   text-align: center;
-  /* background-color: #ffff transparent; */
 }
 /*  styling the contact section */
 #contact {
@@ -281,7 +277,6 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 100vh;
   padding: 20px 0;
-  /* position: relative; */
 }
 /* The two columns in contact section sit next to each other */
 .col {
@@ -367,7 +362,6 @@ textarea {
   font-size: 15px;
   outline: 0;
   resize: vertical;
-  background-color: #f0ffff;
   box-shadow: 0px 0px 20px var(--myBackgroundColor);
 }
 input[type="text"]:focus,
@@ -379,16 +373,15 @@ textarea:focus {
 }
 input[type="submit"] {
   display: block;
-  background-color: var(--myColor);
+  background-color: #008000;
   opacity: 0.85;
   border-radius: 50px;
-  color: white;
   padding: 12px 25px;
   margin: 25px auto;
   border: none;
   cursor: pointer;
   letter-spacing: 2px;
-  font-size: bold;
+  font-weight: bold;
 }
 input[type="submit"]:hover {
   opacity: 1;
@@ -413,8 +406,9 @@ footer .footer-content {
   line-height: 15px;
   font-size: 0.625rem;
 }
-/* Media query */
-@media (max-width: 750px) {
+/* Media query for responsiveness all all types of screens and print */
+
+@media all and (max-width: 750px) {
   .checkbtn {
     display: block;
     margin: 10px 0;
@@ -462,22 +456,21 @@ footer .footer-content {
     /* opacity: 0.94; */
   }
 
-  #about h1 {
+  #about .container h1 {
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    padding: 18px;
-    margin-top: -100px;
+    padding: 5px;
+    margin-top: -20px;
     font-size: 0.688rem;
-    line-height: 21px;
+    line-height: 16px;
   }
 
   #about h1 span {
     font-size: 0.813rem;
     font-family: var(--Press-Start-2P);
     padding: 5px;
-    /* line-height: 10px; */
     height: 10px;
     font-weight: 700;
   }
@@ -547,10 +540,14 @@ footer .footer-content {
   }
   #projects .cards .card figcaption {
     font-size: 0.625rem;
-    /* line-height: 15px; */
   }
 }
-@media all and (min-width: 600px) {
+@media all and (min-width: 300px) {
+  #projects .cards {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 900px) {
   #projects .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
