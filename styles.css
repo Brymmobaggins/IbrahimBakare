@@ -289,7 +289,7 @@ body::-webkit-scrollbar {
 #projects .cards .card figcaption {
   position: absolute;
   z-index: 2;
-  font: bold 10px "libre franklin";
+  font: 10px "libre franklin";
   color: #000;
   bottom: 0;
   padding: 8px 0;
@@ -297,12 +297,11 @@ body::-webkit-scrollbar {
   width: 100%;
   text-align: center;
 }
-#projects .cards .card #stats{
+#projects .cards .card #stats {
   position: absolute;
   color: white;
   z-index: 2;
   font-size: 8px;
-
 }
 /*  styling the contact section */
 #contact {
