@@ -211,7 +211,7 @@ body::-webkit-scrollbar {
   text-decoration: underline;
   font-size: 20px;
   text-align: center;
-  color: #ac4040 !important;
+  color: #ac4040;
   margin-bottom: 5px;
   font-family: tahoma;
 }
@@ -222,7 +222,7 @@ body::-webkit-scrollbar {
 }
 #skills .container p {
   text-align: center;
-  font: normal 20px "libre franklin";
+  font: normal 20px tahoma;
   color: #ac4040;
   margin-top: 20px;
   text-decoration: underline;
@@ -366,14 +366,6 @@ body::-webkit-scrollbar {
   border: 1px solid var(--title-color);
   border-radius: 50%;
 }
-/* .icon-link i {
-  margin: auto;
-} */
-/* .social-media span{
-  font-size: 20px;
-  font-weight: 500;
-  margin-left: 10px;
-} */
 .social-media ul li a:hover {
   opacity: 0.5;
 }
@@ -399,12 +391,12 @@ textarea {
   font-size: 15px;
   outline: 0;
   resize: vertical;
+  box-sizing: border-box;
   background-color: transparent;
-  /* box-shadow: 0px 0px 20px var(--background-color); */
 }
 input[type="text"]:focus,
 textarea:focus {
-  border-bottom: 2px solid var(--title-color);
+  border-bottom: 2px solid var(--btn-color);
 }
 ::placeholder {
   color: var(--place-holder-color);
@@ -525,7 +517,7 @@ footer .footer-content {
     margin-top: -100px;
   }
   .social-media ul li {
-    margin-right: 1px;
+    margin-right: -20px;
   }
   .social-media ul li a {
     font-size: 1.675rem;
@@ -547,6 +539,8 @@ footer .footer-content {
     font-size: 0.75rem;
     line-height: 15px;
     margin-top: -55px 10px 0px 10px;
+    /* margin-right: 10px;
+    margin-left: 10px; */
   }
   #skills p {
     font-size: 0.563rem;
