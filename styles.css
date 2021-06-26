@@ -10,12 +10,11 @@
   --body-colour: #696969;
   --background-color: #eee;
   --foreground-color: #fff;
-  --btn-color: #008000;
+  --btn-color: #13b150;
   --Tahoma-font: "Press Start 2P", Tahoma;
   --animate-duration: 800ms;
   --animate-delay: 0.9s;
   --blend-mode: normal;
-  --ease-in-out-quart: cubic-bezier(0.77, 0, 0.175, 1);
 }
 .dark-theme {
   --title-color: #ffff;
@@ -26,15 +25,6 @@
   --blend-mode: lighten;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
-html {
-  scroll-behavior: smooth;
-}
 body {
   font-family: var(--Tahoma-font);
   font-size: 0.95rem;
@@ -42,9 +32,19 @@ body {
   color: var(--title-color);
   transition: background-color 1s, color 1s;
 }
+html {
+  scroll-behavior: smooth;
+}
 body::-webkit-scrollbar {
   display: none;
 }
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 20px;
@@ -108,10 +108,11 @@ body::-webkit-scrollbar {
 }
 .nav-content ul li:last-child {
   margin-right: 0;
+  margin-left: 5px;
 }
 .nav-content ul li a {
   text-decoration: none;
-  color: var(--myColor);
+  color: var(--title-color);
   font-family: "Press Start 2P", Tahoma;
   font-weight: bold;
   margin-right: 15px;
@@ -130,30 +131,22 @@ body::-webkit-scrollbar {
   opacity: 0.94;
   /* transition: transform 1s rotate(45deg); */
 }
-.nav-content ul li a i {
-  font-style: normal;
-  font-size: inherit;
-  font-weight: 900;
-  font-family: cursive;
-  margin-left: -15px;
-}
-/* .toggle-btn {
-  width: 4rem;
-  height: 4rem;
+.toggle-btn {
+  width: 2rem;
+  height: 2rem;
   position: absolute;
-  top: 2.5rem;
+  top: 1.5rem;
   right: 2.5rem;
   display: flex;
   cursor: pointer;
   z-index: 9999;
-  background: white;
-
-/* .toggle-btn i {
+  /* background: var(--body-colour); */
+}
+.toggle-btn i {
   margin: auto;
-  font-size: 20rem;
-  color:white;
-
-} 
+  font-size: 1.5rem;
+  color: var(--title-color);
+}
 /* styling the About section */
 #about {
   width: 100%;
@@ -215,6 +208,7 @@ body::-webkit-scrollbar {
   margin-top: 15px;
 }
 #skills .container span {
+  text-decoration: underline;
   font-size: 20px;
   text-align: center;
   color: #ac4040 !important;
@@ -442,7 +436,7 @@ footer .footer-content {
   line-height: 15px;
   font-size: 0.625rem;
 }
-/* Media query for responsiveness all all types of screens and print */
+/* Media query for responsiveness  all types of screens and print */
 
 @media all and (max-width: 750px) {
   .checkbtn {
@@ -456,10 +450,10 @@ footer .footer-content {
     align-items: center;
     justify-content: center;
     position: fixed;
-    width: 100%;
-    height: 100vh;
+    width: 50%;
+    height: 100%;
     background-color: var(--foreground-color);
-    top: 55px;
+    top: -5px;
     left: -100%;
     transition: all 0.5s;
   }
@@ -510,9 +504,6 @@ footer .footer-content {
     height: 10px;
     font-weight: 700;
   }
-  #projects .cards {
-    grid-template-columns: 1fr 1fr;
-  }
   .col {
     width: 100%;
     margin-top: 0;
@@ -547,9 +538,9 @@ footer .footer-content {
   #skills h3 {
     font-size: 0.75rem;
     line-height: 15px;
-    margin-top: -55px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-top: -55px 10px 0px 10px;
+    /* margin-right: 10px;
+    margin-left: 10px; */
   }
   #skills p {
     font-size: 0.563rem;
@@ -578,9 +569,14 @@ footer .footer-content {
     font-size: 0.625rem;
   }
 }
-@media all and (min-width: 300px) {
+@media all and (max-width: 405px) {
   #projects .cards {
     grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) {
+  #projects .cards {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media all and (min-width: 900px) {
