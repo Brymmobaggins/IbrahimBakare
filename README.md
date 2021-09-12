@@ -4,7 +4,7 @@
 
 ## links
 
-[Live](https://my-portfolio-a2cf3c.netlify.app/)
+[Live](https://brymmobaggins.github.io/IbrahimBakare/)
 
 ## Built with
 
